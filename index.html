@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+    <!-- MAIN START -->
+
+    <main class="container-start-game" id="main-start">
+        <div class="container-start">
+            <div class="container-title-start">
+                <h1 class="title-start">QUIZ GAME</h1>
+            </div>
+            <div class="container-button-start">
+                <button class="button-start" id="button-start">START</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- MAIN QUESTIONS -->
+
+    <main class="questions-container" id="questions-container">
+
+    </main>
+
+    <!-- MAIN WRONG -->
+
+    <main class="container-answer-wrong" id="container-wrong">
+        <div class="container-info-wrong">
+            <h1>Wrong</h1>
+            <button id="button-continue-wrong">Continue</button>
+        </div>
+    </main>
+
+    <!-- MAIN CORRECT -->
+
+    <main class="container-answer-correct" id="container-correct">
+        <div class="container-info-correct" id="container-info-correct">
+            <h1>Correct</h1>
+            <button id="button-continue-correct">Continue</button>
+        </div>
+    </main>
+
+    <!-- FINISH -->
+
+    <main class="container-answer-finish" id="container-answer-finish">
+        <div class="container-info-finish" id="container-info-finish">
+            <h1>FINISH</h1>
+            <div class="container-info-f">
+                <p class="time" id="time">TIME: </p>
+                <p class="errors" id="errors">ERRORS: </p>
+                <p class="corrects" id="corrects">SUCCESS: </p>
+            </div>
+            <button id="button-again">AGAIN</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
