@@ -266,37 +266,32 @@ function gameQuiz() {
     shuffle(questions[i].answers)
 
     var buttonRowOneFirst = document.createElement("button")
-    for(var j = 0; j < 1; j++) {
-        option1 = questions[i].answers[0].correct;
-        buttonRowOneFirst.innerHTML += `
-            ${questions[i].answers[0].answer}
-        `;
-    }
+    option1 = questions[i].answers[0].correct;
+    buttonRowOneFirst.innerHTML += `
+        ${questions[i].answers[0].answer}
+    `;
+
     var buttonRowOneSecond = document.createElement("button")
-    for(var j = 0; j < 1; j++) {
-        option2 = questions[i].answers[1].correct;
-        buttonRowOneSecond.innerHTML += `
-            ${questions[i].answers[1].answer}
-        `;
-    }
+    option2 = questions[i].answers[1].correct;
+    buttonRowOneSecond.innerHTML += `
+        ${questions[i].answers[1].answer}
+    `;
 
     row1.appendChild(buttonRowOneFirst)
     row1.appendChild(buttonRowOneSecond)
 
     var buttonRowTwoFirst = document.createElement("button")
-    for(var j = 0; j < 1; j++) {
-        option3 = questions[i].answers[2].correct;
-        buttonRowTwoFirst.innerHTML += `
-            ${questions[i].answers[2].answer}
-        `;
-    }
+    option3 = questions[i].answers[2].correct;
+    buttonRowTwoFirst.innerHTML += `
+        ${questions[i].answers[2].answer}
+    `;
+    
     var buttonRowTwoSecond = document.createElement("button")
-    for(var j = 0; j < 1; j++) {
-        option4 = questions[i].answers[3].correct;
-        buttonRowTwoSecond.innerHTML += `
-            ${questions[i].answers[3].answer}
-        `;
-    }
+    
+    option4 = questions[i].answers[3].correct;
+    buttonRowTwoSecond.innerHTML += `
+        ${questions[i].answers[3].answer}
+    `;
 
     row2.appendChild(buttonRowTwoFirst)
     row2.appendChild(buttonRowTwoSecond)
